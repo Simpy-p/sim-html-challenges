@@ -1,0 +1,165 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+nav {
+  height: 100px;
+  widows: 100%;
+  background-color: black;
+  color: antiquewhite;
+  display: flex;
+  justify-content: space-between;
+}
+
+img{
+
+  border-radius: 50%;
+  border: 2px solid white;
+  display: flex;
+  justify-self: center;
+  
+}
+nav div {
+  width: 10%;
+  text-align: center;
+  padding: 50px;
+  background-color: purple;
+}
+nav ul {
+  width: 60%;
+  list-style: none;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+nav ul li {
+  padding: 30px;
+  width: 30%;
+}
+
+img {
+  grid-area: img;
+}
+
+h1 {
+  grid-area: about-me;
+}
+
+right {
+  grid-area: hobbies;
+}
+
+main {
+  grid-area: contacts;
+}
+aside {
+  grid-area: employment;
+}
+
+footer {
+  grid-area: education;
+}
+header {
+  width: 100%;
+  height: 100px;
+}
+
+#purple {
+  background-color: purple;
+  color: blanchedalmond;
+  width: 20%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 5px;
+}
+
+
+
+
+section > * {
+  background-color: purple;
+  border:2px solid white;
+  color: aliceblue;
+  height: 100px;
+  display: flex;
+  align-items: flex-start;
+ 
+  
+}
+
+
+
+section {
+ 
+  display: grid;
+  grid-template-areas:
+  "img about-me"
+  "img hobbies"
+  "img contacts"
+  "employment employment"
+  "education education";
+  row-gap: 2px;
+  padding: 2px;
+}
+@media only screen and (max-width: 550px) {
+
+  nav{
+    display: none;
+  }
+
+  img{
+    border-radius: 50%;
+  }
+
+  img-div{
+    height: 100%;
+    width: 100%;
+  }
+ 
+  section{
+    margin:10px;
+    display: grid;
+    height: 80px;
+    grid-template-areas:
+      "img"
+      "about-me"
+      "hobbies"
+      "contacts"
+      "employment"
+      "education";
+    row-gap: 2px;
+    padding: 2px;
+  } 
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) and
+(orientation:landscape) {
+
+  /* @media only screen and (device-width: 768px) { */
+
+    img{
+      height:80px;
+      width:400px;
+      border-radius:0%;
+      height: 200px;
+    }
+ 
+  section{
+    margin:2px;
+    display: grid;
+    heil
+  
+    grid-template-areas:
+    "about-me about-me img"
+    "hobbies  hobbies contacts"
+      "employment employment employment"
+      "education education education";
+    row-gap: 2px;
+    padding: 2px;
+  } 
+}
+
+
